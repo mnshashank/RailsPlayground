@@ -4,25 +4,17 @@
     <title>RailsPlayground</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" 
     integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" 
     crossorigin="anonymous"></script>
   </head>
-
   <body>
-
-
-<%= render 'home/navbar' %>
-<%= yield %>
-
-<%= render 'home/new_question_form' %>
-    
+    <%= render 'home/navbar' %>
+    <%= yield %>
+    <%= render 'home/new_question_form' %>
   </body>
 </html>
