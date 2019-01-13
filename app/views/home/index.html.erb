@@ -11,7 +11,7 @@
           <h4 class="media-heading"><%= eachQuestion.email %></h4>
           <div><%= time_ago_in_words eachQuestion.created_at %> ago</div>
           <%= eachQuestion.body %>
-          <div><a href="/questions/123" class="btn btn-success btn-xs">View Answers</a></div>
+          <div><a href="<%= question_path(eachQuestion)%>" class="btn btn-success btn-xs">View Answers</a></div>
         </div>
       </div>
     </div>
