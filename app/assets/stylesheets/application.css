@@ -13,4 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+ 
+.main-banner {
+    margin-top: -20px;
+}
